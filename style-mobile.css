@@ -1,42 +1,71 @@
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 500px) {
+
+  :root {
+    --very-dark-blue: hsl(233, 47%, 7%); /* main background */
+    --dark-desaturated-blue-card-bg: hsl(244, 38%, 16%); /* card background */
+    --soft-violet: hsl(277, 64%, 61%); /* accent */
+    --white: hsl(0, 0%, 100%);  /* main heading, stats */
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75); /* main paragraph */
+    --slightly-transparent-white-stats: hsla(0, 0%, 100%, 0.6); /* stat headings */
+    --font-size-15: 15px;
+    --font-family-inter: 'Inter', sans-serif;
+    --font-family-lexend-deca: 'Lexend Deca', sans-serif;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+  }
+
+  .container {
+    height: 122vh;
+  }
 
   .card {
-    width: 330px;
+    width: 327px;
     height: 780px;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
-  .img {
-    background-image:url('/images/image-header-mobile.jpg');
+  .card-img{
+    background-image:url('images/image-header-mobile.jpg');
     width: 100%;
-    height: 240px;
-    background-repeat:no-repeat ;
     background-size: cover;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 0.6667rem 0.6667rem 0rem 0rem;
   }
-  .text-container {
-    width: 330px;
+
+  .card-body {
+    width: 100%;
+    min-height: 36rem;
     text-align: center;
-    padding-top: 38px;
-    padding-bottom: 38px;
-    padding-right: 35px;
-    padding-left: 35px; 
+    padding: 2.6rem 2.4rem 2.5333rem;
+  }
+
+  br {
+    display: none;
   }
 
   .title {
-    font-size: 26px;
+    font-size: 1.82rem;
+    margin-bottom: 0.9333rem;
   }
 
-  .description-container {
-    width: 260px;
-    margin-top: 15px;
+  .description {
+    margin-bottom: 2.8rem;
   }
 
   .stats-container {
+    width: 100%;
+    height: 13.9333rem;
     flex-direction: column;
-    align-content: space-between;
-    margin-top: 40px;
-    height: 209px;
+    justify-content: space-between;
+    align-items: center; 
+  }
+
+  .stats-header {
+    font-size: 1.6rem;
+  }
+
+  .stats-description {
+    font-size: 0.9333rem;
   }
 
 }
+
