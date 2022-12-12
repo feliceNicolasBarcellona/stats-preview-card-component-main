@@ -29,7 +29,8 @@ body {
 
 .container {
   height: 98vh;
-  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;

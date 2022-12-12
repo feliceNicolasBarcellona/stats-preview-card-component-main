@@ -1,4 +1,4 @@
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
 
   :root {
     --very-dark-blue: hsl(233, 47%, 7%); /* main background */
@@ -15,7 +15,7 @@
   }
 
   .container {
-    height: 122vh;
+    height: 125vh;
   }
 
   .card {
